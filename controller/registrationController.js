@@ -8,7 +8,7 @@ const registerCustomer = async (req, res) => {
       address,
       mealPreference,
       startDate,
-    } = req.body;
+    } = req.body || {};
 
     // Validation
     if (
